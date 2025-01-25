@@ -83,3 +83,97 @@ switch (ratings) {
     default:
         console.log("Invalid Ratings");
 }
+
+
+const email = ""
+
+// if email is present ask for password else ask for email
+
+if (email == "sanchit@gmail.com") {
+    console.log("Enter password")
+}
+else {
+    console.log("Enter email")
+}
+
+
+if (email != "") {
+    console.log("Enter password")
+}
+else {
+    console.log("Enter email")
+}
+
+
+console.log(Boolean(email))
+
+if (email) {
+    console.log("Enter password")
+}
+else {
+    console.log("Enter email")
+}
+
+// Falsy Values
+false
+0
+-0
+0n
+""
+undefined
+NaN
+null
+
+
+// if user provides email, password then allow login, else ask for it
+
+const email1 = ""
+const password = ""
+
+if (email1 && password) {
+    console.log("Login Allowed")
+}
+else if (email1){
+    console.log("Enter Password")
+} 
+else {
+    console.log("Either email or password not present")
+}
+
+// allow user to sign in with google or github
+
+const googleLoginToken = ""
+const githubLoginToken = ""
+
+if (googleLoginToken || githubLoginToken) {
+    console.log("Welcome to our app")
+}
+else {
+    console.log("Please login to view your account")
+}
+
+let age = 19
+
+if (age >= 18) {
+    console.log("You can get a driving license")
+}
+else {
+    console.log("You cannot get a driving license")
+}
+
+// ternary operator
+const getDriverLicense = age >= 18 ? true: false
+
+if (getDriverLicense) {
+    console.log("You can get a driving license")
+}
+else {
+    console.log("You cannot get a driving license")
+}
+
+let loading = true
+
+if (loading) {
+    return "loading ..."
+}
+console.log("Show the cards to user");
