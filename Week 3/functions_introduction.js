@@ -54,3 +54,29 @@ function sum() {
 }
 
 console.log(sum(11, 12, 13, 14));
+
+// Function to check whether a give string is a pallindrome or not
+// ignore capitalization
+
+function pallindrome(word) {
+    if (word == String(word).split('').reverse().join(''))
+        return true;
+    else 
+        return false;
+}
+
+console.log(pallindrome("malayalam"));
+console.log(pallindrome("hanuman"));
+
+// calculate factorial of a number
+function factorial(num) {
+    if (num == 0) return 1;
+    let fact = 1;
+    for (let i = 1; i <= num; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
+console.log(factorial(12));
+console.log(factorial(5));
